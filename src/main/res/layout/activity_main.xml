@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="1">
+            <Button
+                android:text="顺序播放"
+                android:id="@+id/orderM"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"></Button>
+            <Button
+                android:text="随机播放"
+                android:id="@+id/randomM"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"></Button>
+            <Button
+                android:text="单曲循环"
+                android:id="@+id/reverseM"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"></Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_rowWeight="1"></Button>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="2"
+
+            >
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="播放" />
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="暂停"
+                />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="停止"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_rowWeight="1"
+                android:text=""
+                />
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1"
+            >
+
+            <Button
+                android:id="@+id/previous"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="上一首" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="下一首" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_rowWeight="1"
+                />
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1">
+            <TextView
+                android:id="@+id/curTime"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                />
+            <TextView
+                android:id="@+id/songname"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"  />
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="right"
+                >
+
+            </TextView>
+
+
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="2">
+            <SeekBar
+                android:id="@+id/mSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                />
+
+        </GridLayout>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
